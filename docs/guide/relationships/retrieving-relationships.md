@@ -42,7 +42,7 @@ const user = User.query()
     name: 'john',
 
     posts: [
-      Post: {
+      Post {
         id: 1,
         user_id: 1,
         body: '...',
@@ -53,7 +53,7 @@ const user = User.query()
         ]
       },
 
-      Post: {
+      Post {
         id: 2,
         user_id: 1,
         body: '...',
@@ -97,7 +97,7 @@ const user = User.query()
     },
 
     posts: [
-      Post: {
+      Post {
         id: 1,
         user_id: 1,
         body: '...',
@@ -105,7 +105,7 @@ const user = User.query()
         comments: null
       },
 
-      Post: {
+      Post {
         id: 2,
         user_id: 1,
         body: '...',
@@ -144,7 +144,7 @@ const user = User.query()
     },
 
     posts: [
-      Post: {
+      Post {
         id: 1,
         user_id: 1,
         body: '...',
@@ -155,7 +155,7 @@ const user = User.query()
         ]
       },
 
-      Post: {
+      Post {
         id: 2,
         user_id: 1,
         body: '...',
@@ -186,8 +186,8 @@ const user = User.query().with('posts', (query) => {
       id: 1,
       name: 'john',
       posts: [
-        Post: { id: 1, user_id: 1, body: '...', published: true },
-        Post: { id: 2, user_id: 1, body: '...', published: true }
+        Post { id: 1, user_id: 1, body: '...', published: true },
+        Post { id: 2, user_id: 1, body: '...', published: true }
       ]
     },
 
