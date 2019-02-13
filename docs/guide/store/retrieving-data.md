@@ -26,7 +26,7 @@ const users = User.all()
 /*
   [
     User { id: 1, name: 'John' },
-    User: { id: 2, name: 'Jane' }
+    User { id: 2, name: 'Jane' }
   ]
 */
 ```
@@ -53,7 +53,7 @@ const users = User.findIn([1,2])
 /*
   [
     User { id: 1, name: 'John' },
-    User: { id: 2, name: 'Jane' }
+    User { id: 2, name: 'Jane' }
   ]
 */
 ```
@@ -81,7 +81,7 @@ Use the `get` method to fetch all data for the entity. The result is going to be
 ```js
 const users = User.query().get()
 
-// [User { id: 1, name: 'John' }, User: { id: 2, name: 'Jane' }]
+// [User { id: 1, name: 'John' }, User { id: 2, name: 'Jane' }]
 ```
 
 ### Get A Single Data
@@ -217,7 +217,7 @@ const usersByAge = User.query()
   .orderBy('age', 'desc')
   .get()
 
-// [User { id: 4, name: 'Andy', age: 32 }, { id: 2, name: 'Andy', age: 27 }]
+// [User { id: 4, name: 'Andy', age: 32 }, User { id: 2, name: 'Andy', age: 27 }]
 ```
 
 ### Offset & Limit
